@@ -10,16 +10,22 @@ A Django storage backend with **Qingstor**.
 
 ## Installation
 
-Clone code, and run following commands to install:
+*Using venv is highly recommended.*
+
+Install by PyPI:
+
+```bash
+
+pip install django-qingstor-storage
+
+```
+
+Install by source code, just clone the code, and run following commands to install:
 
 ```bash
 cd django_qingstor_storage
 python setup.py install
 ```
-
-*Using venv is highly recommended.*
-
-*PYPI is on the way...*
 
 ## Settings
 

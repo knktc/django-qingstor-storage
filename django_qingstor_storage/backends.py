@@ -142,7 +142,7 @@ class QinstorStorage(Storage):
         :return: exists or not
         :rtype: bool
         """
-        resp = self.bucket.head_object('name')
+        resp = self.bucket.head_object(name)
 
         return True if resp.status_code == 200 else False
 

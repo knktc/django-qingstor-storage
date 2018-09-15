@@ -8,7 +8,7 @@ Use default storage to manipulate files
 @create:2018-09-01 18:22
 """
 
-from django.http import HttpResponse, Http404
+from django.http import HttpResponse, Http404, JsonResponse
 from django.core.files.storage import DefaultStorage
 from django_qingstor_storage.backends import Qinstor404Exception as FileDoesNotExistException
 
@@ -27,3 +27,14 @@ def download(request, **kwargs):
 
     response = HttpResponse(f.read())
     return response
+
+
+def check_existence(request, **kwargs):
+    """ check file existence
+    """
+    filename = kwargs.get('filename')
+    print(filename)
+    if STORAGE.exists(filename):
+        return HttpResponse()
+    else:
+        raise Http404

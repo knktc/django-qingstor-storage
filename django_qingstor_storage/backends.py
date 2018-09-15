@@ -158,6 +158,19 @@ class QinstorStorage(Storage):
         """
         return self._head(name).get('exists')
 
+    def size(self, name):
+        """ get file size, in bytes, will return 0 if file not exists
+
+        :param name: file name, use full path if file in directory
+        :return: size in bytes
+        :rtype: int
+        """
+        obj_info = self._head(name)
+        if not obj_info.get('exists'):
+            return 0
+        else:
+            return obj_info.get('Content-Length')
+
     def url(self, name, expires=60 * 5):
         """ not sure is there any way to get a signed url by the sdk,
         So I have to write a function to get the share link

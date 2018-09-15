@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='django_qingstor_storage',
-    version='0.1.1',
+    version='0.1.2',
     packages=['django_qingstor_storage'],
     url='https://github.com/knktc/django-qingstor-storage',
     author='knktc',

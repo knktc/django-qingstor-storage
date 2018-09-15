@@ -72,3 +72,4 @@ Open your browser to visit <http://localhost:8000> .
 * Qinstor Python SDK(on github): <https://github.com/yunify/qingstor-sdk-python>
 * Qinstor Python SDK docs: <https://docs.qingcloud.com/qingstor/sdk/python/qingstor_sdk.html>
 * Qinstor Restful API: <https://docs.qingcloud.com/qingstor/api/>
+* Django Custom Storage HOW-TO: <https://docs.djangoproject.com/en/2.1/howto/custom-file-storage/>

@@ -61,11 +61,10 @@ We also provide a demo site with Django admin. Just clone the code, edit setting
 
 ```bash
 python manage.py migrate
-python manage.py createsuperuser
 python manage.py runserver
 ```
 
-Open your browser to visit <http://localhost:8000> .
+Open your browser to visit <http://localhost:8000> . And login with (username: admin/password: adminadmin) .
 
 ## See Also
 

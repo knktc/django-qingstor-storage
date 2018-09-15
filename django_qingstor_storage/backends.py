@@ -136,11 +136,15 @@ class QinstorStorage(Storage):
         return QingstorFile(tmp_file, name, self)
 
     def exists(self, name):
-        """ always return False right now...
-        """
-        # todo check file existence
+        """ check file existence
 
-        return False
+        :param name: file name, use full path if file in directory
+        :return: exists or not
+        :rtype: bool
+        """
+        resp = self.bucket.head_object(name)
+
+        return True if resp.status_code == 200 else False
 
     def url(self, name, expires=60 * 5):
         """ not sure is there any way to get a signed url by the sdk,

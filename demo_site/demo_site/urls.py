@@ -19,5 +19,6 @@ from netdisk import views
 
 urlpatterns = [
     path('', admin.site.urls),
-    path('download/<filename>/', views.download)
+    path('download/<filename>/', views.download),
+    path('head/<filename>/', views.check_existence),
 ]

@@ -7,4 +7,4 @@ pytz==2018.5
 PyYAML==3.13
 qingstor-sdk==2.2.6
 requests==2.19.1
-urllib3==1.23
+urllib3==1.26.5

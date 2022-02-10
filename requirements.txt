@@ -4,7 +4,7 @@ Django==2.2.27
 idna==2.6
 pycrypto==2.6.1
 pytz==2018.5
-PyYAML==3.13
+PyYAML==5.4
 qingstor-sdk==2.2.6
 requests==2.19.1
 urllib3==1.23
